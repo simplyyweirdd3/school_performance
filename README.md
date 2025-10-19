@@ -10,9 +10,6 @@ We merge school-level data (Common Core of Data, CCD) with socioeconomic indicat
 - **EdGap** — socioeconomic and ACT/SAT mapping dataset used to derive SES variables and ACT averages. :contentReference[oaicite:2]{index=2}  
   Link: https://www.edgap.org/
 
-<<<<<<< HEAD
-Using data from the *EdGap* and *Common Core of Data (CCD)* datasets, we estimate how socioeconomic status (SES)-proxied by the percentage of students receiving free or reduced-price lunch predicts average ACT scores.
-=======
 **Local/additional files included in this repository**
 - `EdGap_data.xlsx` (provided)  
 - `ccd_sch_029_1617_w_1a_11212017.xlsx` (provided)  
@@ -44,71 +41,13 @@ Major steps and where to find the code:
 
 ## Author
 Ruman Sidhu — Seattle University, DATA 5100 02 (Fall 2025)  
->>>>>>> d6114d9 (Updated README with final sections and links per rubric)
 
 
 ## License
 This repository is shared under the MIT License. See `LICENSE` for details.
 
-<<<<<<< HEAD
-# Data Sources
-
-*EdGap\_data.xlsx:* Contains socioeconomic indicators such as unemployment rate, adult education level, and median household income at the county level.  
-
-*ccd\_sch\_029\_1617\_w\_1a\_11212017.xlsx:* Common Core of Data file with school-level identifiers and characteristics.  
-These datasets were merged on the unique `NCESSCH` school ID.
-
-
-
-## Methods
-
-1 Clean and merge the two datasets.  
-
-2 Create a *ses\_index* variable (negative of the percent free/reduced lunch so higher = wealthier).  
-
-3 Explore the data (EDA): histograms, scatterplots.  
-
-4 Fit OLS regression with robust (HC1) standard errors.  
-
-5 Run diagnostics (Q–Q plot, residuals vs. fitted, Cook’s D, VIF).  
-
-6 Conduct sensitivity checks:  
-
-&nbsp;  - Add state fixed effects.  
-
-&nbsp;  - Remove influential observations.  
-
-7 Export cleaned data and regression results for reproducibility.
-
-
-
-## Key Findings
-
-*SES coefficient:* ≈ 8.30 (p < 0.001)- a 10 percentage-point increase in SES is associated with about +0.83 points in average ACT score.  
-
-Adjusted R² ≈ 0.605 indicating that SES explains roughly 60 % of ACT variation across schools.  
-
-Results remain positive and significant after state fixed effects and outlier removal.
-
-
-
-## Files
-
-
- `School\_Performance.ipynb`  Main Jupyter notebook with data cleaning, EDA, modeling, diagnostics, and sensitivity checks. 
-
- `cleaned\_edgap\_ccd.csv`  Final cleaned dataset used in the analysis. 
- 
- `regression\_coefficients.csv`  Exported regression table with coefficients and robust SEs. 
-
- `README.md` This documentation file.
-
-
- 
-=======
 ## Acknowledgments
 Course DATA 5100 (Seattle University) for the assignment and initial data. EdGap and NCES for the data sources. Additional contextual data from CMS/CDC/US Census as noted in the notebook.
->>>>>>> d6114d9 (Updated README with final sections and links per rubric)
 
 ## How to reproduce
 1. Clone the repository:  
