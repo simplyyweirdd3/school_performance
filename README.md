@@ -51,18 +51,14 @@ Results remain positive and significant after state fixed effects and outlier re
 
 ## Files
 
-| File | Description |
 
-|------|--------------|
+ `School\_Performance.ipynb`  Main Jupyter notebook with data cleaning, EDA, modeling, diagnostics, and sensitivity checks. 
 
-| `School\_Performance.ipynb` | Main Jupyter notebook with data cleaning, EDA, modeling, diagnostics, and sensitivity checks. |
+ `cleaned\_edgap\_ccd.csv`  Final cleaned dataset used in the analysis. 
+ 
+ `regression\_coefficients.csv`  Exported regression table with coefficients and robust SEs. 
 
-| `cleaned\_edgap\_ccd.csv` | Final cleaned dataset used in the analysis. |
-
-| `regression\_coefficients.csv` | Exported regression table with coefficients and robust SEs. |
-
-| `README.md` | This documentation file. |
-
+ `README.md` This documentation file.
 
 
 ## How to Reproduce
